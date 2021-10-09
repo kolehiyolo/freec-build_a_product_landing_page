@@ -17,7 +17,7 @@ Welcome! I am a budding coder and this is my submission to the 'Build a Product 
 
 ## Overview
 ### Summary
-This is where we write the summary of what the project is all about
+This sample project was fun in the sense that there's so much variety in the components to be built. The header is fixed, the form is a columned flexbox, the features section looks like a grid, there's an embedded YouTube video that's supposed to be responsive, and the pricing is also quite demanding. Even the footer is unique with the align-right situation. To sum up, this project took a lot in terms of flexing my CSS understanding.
 
 ### The Challenge
 - Perfectly mimic the sample page from [CodePen](https://codepen.io/freeCodeCamp/full/RKRbwL)
@@ -35,8 +35,8 @@ This is where we write the summary of what the project is all about
 - freeCodeCamp Challenge: [freeCodeCamp | Build a Product Landing Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
 - Sample: [CodePen](https://codepen.io/freeCodeCamp/full/RKRbwL)
 - Solution URL: [GitHub Repo](https://github.com/kolehiyolo/freecodecamp--build_a_product_landing_page)
-- Live Site URL (Static): [Kolehiyolo | freeCodeCamp | Build a Product Landing Page (Static)]()
-- Live Site URL: [Kolehiyolo | freeCodeCamp | Build a Product Landing Page]()
+- Live Site URL (Static): [Kolehiyolo | freeCodeCamp | Build a Product Landing Page (Static)](https://kolehiyolo.github.io/freecodecamp--build_a_product_landing_page/)
+- Live Site URL: [Kolehiyolo | freeCodeCamp | Build a Product Landing Page](https://kolehiyolo.github.io/freecodecamp--build_a_product_landing_page/)
 
 ## My process
 ### Built with
