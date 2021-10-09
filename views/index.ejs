@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- * Head -->
+<%- include('modules/macro/head.ejs'); %>
+
+<body>
+    <!-- * Header -->
+    <%- include('modules/macro/header.ejs'); %>
+
+    <!-- * Main -->
+    <main class="main">
+        <section id="form-section" class="main--form-section">
+            <form id="form" class="main--form-section--form" action="https://www.freecodecamp.com/email-submit">
+                <label id="email-label" class="main--form-section--form--label">
+                    <h1>Handcrafted, home-made masterpieces</h1>
+                    <input id="email" type="email" placeholder="Enter your email address" name="email">
+                </label>
+                <input class="main--form-section--form--submit" id="submit" type="submit" value="Get Started">
+            </form>
+        </section>
+
+        <section id="features" class="main--features">
+            <div id="feature-1" class="main--features--feature feature">
+                <div id="feature-img-1" class="main--features--feature--img feature-img">
+                    <img src="/images/icons/main--features--feature-1.svg" alt="feature-premium-icon" class="svg-filter-orange">
+                </div>
+                <div id="feature-text-1" class="main--features--feature--text feature-text">
+                    <h2>Premium Materials</h2>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity
+                        of your purchase.</p>
+                </div>
+            </div>
+            <div id="feature-2" class="main--features--feature feature">
+                <div id="feature-img-2" class="main--features--feature--img feature-img">
+                    <img src="/images/icons/main--features--feature-2.svg" alt="feature-premium-icon" class="svg-filter-orange">
+                </div>
+                <div id="feature-text-2" class="main--features--feature--text feature-text">
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you receive your trombone as soon as we have finished making it. We also provide
+                        free returns if you are not satisfied.</p>
+                </div>
+            </div>
+            <div id="feature-3" class="main--features--feature feature">
+                <div id="feature-img-3" class="main--features--feature--img feature-img">
+                    <img src="/images/icons/main--features--feature-3.svg" alt="feature-premium-icon" class="svg-filter-orange">
+                </div>
+                <div id="feature-text-3" class="main--features--feature--text feature-text">
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and
+                        test the pitch of your instrument.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="main--how-it-works">
+            <div class="iframe-container main--how-it-works--video-div">
+                <iframe id="video" class="main--how-it-works--video-div--video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="pricing" class="main--pricing">
+            <div id="pricing-card-1" class="main--pricing--card pricing-card">
+                <div class="main--pricing--card--head">
+                    <h2>Tenor Trombone</h2>
+                </div>
+                <div class="main--pricing--card--body">
+                    <h3>$600</h3>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button>Select</button>
+                </div>
+            </div>
+            <div id="pricing-card-2" class="main--pricing--card pricing-card">
+                <div class="main--pricing--card--head">
+                    <h2>Bass Trombone</h2>
+                </div>
+                <div class="main--pricing--card--body">
+                    <h3>$900</h3>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button>Select</button>
+                </div>
+            </div>
+            <div id="pricing-card-3" class="main--pricing--card pricing-card">
+                <div class="main--pricing--card--head">
+                    <h2>Valve Trombone</h2>
+                </div>
+                <div class="main--pricing--card--body">
+                    <h3>$1200</h3>
+                    <p>Plays similar to a Trumpet</p>
+                    <p>Great for Jazz Bands</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button>Select</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- * Footer -->
+    <%- include('modules/macro/footer.ejs'); %>
+
+    <!-- * Attribution -->
+    <%- include('modules/macro/attribution.ejs'); %>
+
+    <!-- * Client-side Scripts -->
+    <%- include('modules/macro/scripts.ejs'); %>
+</body>
+
+</html>

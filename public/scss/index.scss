@@ -1,0 +1,220 @@
+// * Node-SASS Script For Exporting
+// node-sass public/scss/index.scss public/css/index.css
+
+// * Root Properties
+@import "../../public/scss/others/_root.scss";
+
+html {
+    min-height: 100vh;
+
+    // * Overriding Default Box Model
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    // * Project Font
+    * {
+        font-family: var(--font--sans-serif);
+        color: var(--color--text);
+    }
+
+    // * Body
+    body {
+        // * Main
+        min-height: 100vh;
+        background-color: var(--color--background);
+
+        // * Header
+        @import "../../public/scss/modules/macro/header.scss";
+
+        // * Main
+        .main {
+            // * Main
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-top: 80px;
+
+            &--form-section {
+                &--form {
+                    // * Flexbox
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    // * Font
+                    text-align: center;
+
+                    &--label {
+                        h1 {
+                            margin-bottom: 20px;
+                        }
+
+                        input {
+                            // * Main
+                            width: 250px;
+                            padding: 5px;
+                        }
+                    }
+
+                    &--submit {
+                        // * Main
+                        width: 150px;
+                        margin: 0 auto;
+                        border: none;
+                        background-color: var(--color--button);
+
+                        // * Font
+                        font-family: var(--font--sans-serif);
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+
+            &--features {
+                // * Main
+                padding: 70px 20px;
+
+                // * Grid
+                display: grid;
+                grid-area: 1fr 1fr 1fr;
+                gap: 50px;
+
+                &--feature {
+                    // * Flexbox
+                    display: flex;
+
+                    &--img {
+                        // * Flexbox
+                        flex: 0 0 20%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 65px;
+                        }
+
+                        .svg-filter-orange {
+                            filter: invert(52%) sepia(72%) saturate(1417%) hue-rotate(360deg) brightness(102%) contrast(104%);
+                        }
+                    }
+
+                    &--text {
+                        h2 {
+                            padding-bottom: 10px;
+                        }
+
+                        p {
+                            padding-bottom: 10px;
+                            font-size: 0.9375rem;
+                        }
+                    }
+                }
+            }
+
+            &--how-it-works {
+                // * Main
+                max-width: 550px;
+                margin: 0 auto;
+
+                &--video-div {
+                    // * Main
+                    width: 100%;
+                    height: 0;
+                    padding-bottom: 56.25%;
+                    position: relative;
+
+                    &--video {
+                        // * Main
+                        width: 100%;
+                        height: 100%;
+
+                        // * Positioning
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+
+            &--pricing {
+                // * Main
+                padding: 50px 0;
+
+                // * Flexbox
+                display: flex;
+                justify-content: space-between;
+
+                &--card {
+                    // * Main
+                    flex-grow: 1;
+                    flex-basis: 0px;
+                    margin: 10px;
+                    border: 1px var(--color--border) solid;
+
+                    // * Font
+                    text-align: center;
+
+                    &--head {
+                        h2 {
+                            // * Main
+                            padding: 10px;
+                            background-color: #dddddd;
+
+                            // * Font
+                            text-transform: uppercase;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &--body {
+                        h3 {
+                            // * Main
+                            margin: 20px;
+
+                            // * Font
+                            font-size: 1.5625rem;
+                        }
+
+                        p {
+                            // * Main
+                            margin: 10px;
+                            // * Font
+                            font-size: 0.9375rem;
+                        }
+
+                        button {
+                            // * Main
+                            width: 100px;
+                            padding: 5px;
+                            margin: 20px auto;
+                            background-color: var(--color--button);
+                            border: none;
+
+                            // * Font
+                            font-family: var(--font--sans-serif);
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            font-size: 1.125rem;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        // * Footer
+        @import "../../public/scss/modules/macro/footer.scss";
+
+        // * Attribution
+        @import "../../public/scss/modules/macro/attribution.scss";
+    }
+}
+
+// * Others
+// Media Queries
+@import "../../public/scss/others/_media-queries.scss";

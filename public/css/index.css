@@ -1,0 +1,211 @@
+:root {
+  font-size: 16px; }
+
+:root {
+  --font--sans-serif: 'Open Sans', sans-serif; }
+
+:root {
+  --color--background: rgba(238, 238, 238, 1);
+  --color--element: rgba(221, 221, 221, 1);
+  --color--button: rgba(255, 215, 0, 1);
+  --color--border: rgba(0, 0, 0, 1);
+  --color--text: rgba(0, 0, 0, 1);
+  --color--text-2: rgba(68, 68, 102, 1); }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-placeholder); }
+
+html {
+  min-height: 100vh; }
+  html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+  html * {
+    font-family: var(--font--sans-serif);
+    color: var(--color--text); }
+  html body {
+    min-height: 100vh;
+    background-color: var(--color--background); }
+    html body .header {
+      width: 100%;
+      padding: 20px 0;
+      background-color: var(--color--background);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      z-index: 5; }
+      html body .header--img-div {
+        flex-grow: 1;
+        flex-basis: 0px;
+        padding-left: 60px; }
+        html body .header--img-div--img {
+          max-width: 300px;
+          display: block; }
+      html body .header--nav-bar {
+        flex-grow: 1;
+        flex-basis: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; }
+        html body .header--nav-bar--links {
+          text-decoration: none;
+          font-size: 1rem; }
+    html body .main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-top: 80px; }
+      html body .main--form-section--form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center; }
+        html body .main--form-section--form--label h1 {
+          margin-bottom: 20px; }
+        html body .main--form-section--form--label input {
+          width: 250px;
+          padding: 5px; }
+        html body .main--form-section--form--submit {
+          width: 150px;
+          margin: 0 auto;
+          border: none;
+          background-color: var(--color--button);
+          font-family: var(--font--sans-serif);
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 1.25rem; }
+      html body .main--features {
+        padding: 70px 20px;
+        display: grid;
+        grid-area: 1fr 1fr 1fr;
+        gap: 50px; }
+        html body .main--features--feature {
+          display: flex; }
+          html body .main--features--feature--img {
+            flex: 0 0 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            html body .main--features--feature--img img {
+              width: 65px; }
+            html body .main--features--feature--img .svg-filter-orange {
+              filter: invert(52%) sepia(72%) saturate(1417%) hue-rotate(360deg) brightness(102%) contrast(104%); }
+          html body .main--features--feature--text h2 {
+            padding-bottom: 10px; }
+          html body .main--features--feature--text p {
+            padding-bottom: 10px;
+            font-size: 0.9375rem; }
+      html body .main--how-it-works {
+        max-width: 550px;
+        margin: 0 auto; }
+        html body .main--how-it-works--video-div {
+          width: 100%;
+          height: 0;
+          padding-bottom: 56.25%;
+          position: relative; }
+          html body .main--how-it-works--video-div--video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0; }
+      html body .main--pricing {
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between; }
+        html body .main--pricing--card {
+          flex-grow: 1;
+          flex-basis: 0px;
+          margin: 10px;
+          border: 1px var(--color--border) solid;
+          text-align: center; }
+          html body .main--pricing--card--head h2 {
+            padding: 10px;
+            background-color: #dddddd;
+            text-transform: uppercase;
+            font-size: 1rem; }
+          html body .main--pricing--card--body h3 {
+            margin: 20px;
+            font-size: 1.5625rem; }
+          html body .main--pricing--card--body p {
+            margin: 10px;
+            font-size: 0.9375rem; }
+          html body .main--pricing--card--body button {
+            width: 100px;
+            padding: 5px;
+            margin: 20px auto;
+            background-color: var(--color--button);
+            border: none;
+            font-family: var(--font--sans-serif);
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 1.125rem; }
+    html body .footer {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: var(--color--element);
+      text-align: right; }
+      html body .footer--links--link {
+        margin: 0 10px;
+        font-size: 1rem;
+        text-decoration: none;
+        color: var(--color--text); }
+      html body .footer--copyright p {
+        display: inline-block;
+        font-size: 0.9375rem;
+        color: var(--color--text-2); }
+    html body .attribution {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.5rem;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      opacity: 0; }
+
+@media (max-width: 650px) {
+  html body .header--img-div {
+    padding-left: 30px; }
+    html body .header--img-div--img {
+      width: 100%; }
+  html body .header--nav-bar {
+    flex-direction: column;
+    align-items: center; }
+  html body .main {
+    padding-top: 110px; } }
+
+@media (max-width: 600px) {
+  html body .header {
+    flex-direction: column;
+    align-items: center; }
+    html body .header--img-div {
+      padding-left: 0;
+      padding-bottom: 10px; }
+      html body .header--img-div--img {
+        width: 100%; }
+  html body .main {
+    padding-top: 160px; } }
+
+@media (max-width: 550px) {
+  html body .main--features--feature--img {
+    display: none; }
+  html body .main--features--feature--text {
+    text-align: center; } }
+
+@media (max-width: 800px) {
+  html body .main--pricing {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    html body .main--pricing--card {
+      max-width: 300px;
+      width: 100%; } }

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- * Head -->
+<head>
+    <!-- * Meta Tags -->
+    <!-- Unicode -->
+    <meta charset="UTF-8">
+    <!-- Internet Explorer Edge Support -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- * Root Colors -->
+    <!-- I set it up this way so that the theme colors can be overridden very easily through JS -->
+    <style id="theme--override">
+        :root {}
+    </style>
+
+    <!-- * CDN Links -->
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- * Fonts -->
+    <!-- Google Fonts | Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- * Page -->
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="public/css/index.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="public/images/favicon.png">
+    <!-- Page Title -->
+    <title>freeCodeCamp | Build a Product Landing Page (Static)</title>
+</head>
+
+<body>
+    <!-- * Header -->
+    <header id="header" class="header">
+        <!-- This is the website logo -->
+        <div id="img-div" class="header--img-div">
+            <img id="header-img" class="header--img-div--img" src="https://i.imgur.com/wtn2P3k.png" alt="original-trombones-company-logo-img">
+        </div>
+        <!-- This is the navbar -->
+        <nav id="nav-bar" class="header--nav-bar">
+            <a href="#features" class="nav-link header--nav-bar--links">Features</a>
+            <a href="#how-it-works" class="nav-link header--nav-bar--links">How It Works</a>
+            <a href="#pricing" class="nav-link header--nav-bar--links">Pricing</a>
+        </nav>
+    </header>
+
+    <!-- * Main -->
+    <main class="main">
+        <section id="form-section" class="main--form-section">
+            <form id="form" class="main--form-section--form" action="https://www.freecodecamp.com/email-submit">
+                <label id="email-label" class="main--form-section--form--label">
+                    <h1>Handcrafted, home-made masterpieces</h1>
+                    <input id="email" type="email" placeholder="Enter your email address" name="email">
+                </label>
+                <input class="main--form-section--form--submit" id="submit" type="submit" value="Get Started">
+            </form>
+        </section>
+
+        <section id="features" class="main--features">
+            <div id="feature-1" class="main--features--feature feature">
+                <div id="feature-img-1" class="main--features--feature--img feature-img">
+                    <img src="public/images/icons/main--features--feature-1.svg" alt="feature-premium-icon" class="svg-filter-orange">
+                </div>
+                <div id="feature-text-1" class="main--features--feature--text feature-text">
+                    <h2>Premium Materials</h2>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity
+                        of your purchase.</p>
+                </div>
+            </div>
+            <div id="feature-2" class="main--features--feature feature">
+                <div id="feature-img-2" class="main--features--feature--img feature-img">
+                    <img src="public/images/icons/main--features--feature-2.svg" alt="feature-premium-icon" class="svg-filter-orange">
+                </div>
+                <div id="feature-text-2" class="main--features--feature--text feature-text">
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you receive your trombone as soon as we have finished making it. We also provide
+                        free returns if you are not satisfied.</p>
+                </div>
+            </div>
+            <div id="feature-3" class="main--features--feature feature">
+                <div id="feature-img-3" class="main--features--feature--img feature-img">
+                    <img src="public/images/icons/main--features--feature-3.svg" alt="feature-premium-icon" class="svg-filter-orange">
+                </div>
+                <div id="feature-text-3" class="main--features--feature--text feature-text">
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and
+                        test the pitch of your instrument.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="main--how-it-works">
+            <div class="iframe-container main--how-it-works--video-div">
+                <iframe id="video" class="main--how-it-works--video-div--video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="pricing" class="main--pricing">
+            <div id="pricing-card-1" class="main--pricing--card pricing-card">
+                <div class="main--pricing--card--head">
+                    <h2>Tenor Trombone</h2>
+                </div>
+                <div class="main--pricing--card--body">
+                    <h3>$600</h3>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button>Select</button>
+                </div>
+            </div>
+            <div id="pricing-card-2" class="main--pricing--card pricing-card">
+                <div class="main--pricing--card--head">
+                    <h2>Bass Trombone</h2>
+                </div>
+                <div class="main--pricing--card--body">
+                    <h3>$900</h3>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button>Select</button>
+                </div>
+            </div>
+            <div id="pricing-card-3" class="main--pricing--card pricing-card">
+                <div class="main--pricing--card--head">
+                    <h2>Valve Trombone</h2>
+                </div>
+                <div class="main--pricing--card--body">
+                    <h3>$1200</h3>
+                    <p>Plays similar to a Trumpet</p>
+                    <p>Great for Jazz Bands</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button>Select</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- * Footer -->
+    <footer id="footer" class="footer">
+        <div id="footer-links" class="footer--links">
+            <a class="footer--links--link" href="https://en.wikipedia.org/wiki/Privacy" target="_blank">Privacy</a>
+            <a class="footer--links--link" href="https://en.wikipedia.org/wiki/Contact_mechanics" target="_blank">Terms</a>
+            <a class="footer--links--link" href="https://en.wikipedia.org/wiki/Terminology" target="_blank">Contact</a>
+        </div>
+        <div id="copyright" class="footer--copyright">
+            <p>&#169 Copyright 2016,</p>
+            <p>Original Trombones</p>
+        </div>
+    </footer>
+
+    <!-- * Attribution -->
+    <div id="attribution" class="attribution">
+        <p>Challenge by <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page" target="_blank">freeCodeCamp</a></p>
+        <p>Coded by <a href="https://github.com/kolehiyolo" target="_blank">Tristan Sean Paul Cinco</a></p>
+    </div>
+
+    <!-- * Client-side Scripts -->
+    <div id="scripts" class="scripts">
+        <!-- * Data/Variables -->
+        <!-- These are scripts that set up variables either as placeholders or as client-side variables -->
+        <!-- ! No scripts for this project -->
+    
+        <!-- * Active Scripts -->
+        <!-- These are scripts that set event-listeners, module-builders, and client-side javascript actions -->
+        <!-- ! No scripts for this project -->
+    
+        <!-- * freeCodeCamp Testing Script -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </div>
+</body>
+
+</html>

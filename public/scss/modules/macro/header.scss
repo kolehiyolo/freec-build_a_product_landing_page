@@ -1,0 +1,46 @@
+.header {
+    // * Main
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--color--background);
+
+    // * Flexbox
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // * Positioning
+    position: fixed;
+    z-index: 5;
+
+    &--img-div {
+        // * Main
+        flex-grow: 1;
+        flex-basis: 0px;
+        padding-left: 60px;
+
+        &--img {
+            // * Main
+            max-width: 300px;
+            display: block;
+        }
+    }
+
+    &--nav-bar {
+        // * Main
+        flex-grow: 1;
+        flex-basis: 0px;
+
+        // * Flexbox
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        &--links {
+            // * Font
+            text-decoration: none;
+            // TODO - Fix Font Size so we can set it via REM
+            font-size: 1rem;
+        }
+    }
+}
